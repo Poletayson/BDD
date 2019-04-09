@@ -39,3 +39,9 @@ New Python  Image converter
     When I have opened image
     And I have saved image C:/Users/Дима/Desktop/test/33.jpeg
     Then The result should be jpeg
+
+    Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/1.jpg
+    When I have opened image
+    And I have resized image by W
+    Then The result should be (1280, 1280)
