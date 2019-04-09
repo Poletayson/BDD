@@ -19,10 +19,11 @@ class Example:
 
     def saveFile(self, filename):
         str = filename.split('.')[-1].lower()
-        if (str == 'jpg'):
+        if (str == "jpg" or str == "png" or str == "jpeg"):
+            self.img.save(filename)
             return str
         else:
-            return 'png'
+            return "..."
 
 
 
