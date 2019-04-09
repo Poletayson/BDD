@@ -35,3 +35,38 @@ class Example:
         else:
             return (0,0)
 
+
+    def resiseH (self):
+        #print(self.filename)
+
+        str = self.filename.split('.')[-1].lower()
+        if (str == "jpg" or str == "png" or str == "jpeg"):
+            W, H = self.img.size
+            self.img = self.img.resize((H, H))
+            return self.img.size
+        else:
+            return (0,0)
+
+
+
+def main():
+    Tk().withdraw()  # Openfile Window
+    filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
+
+    ex = Example (filename)
+    print(ex.openFile())
+
+    mode = '0'
+    if (mode == 'W'):
+        print(ex.resiseW())
+    elif (mode == 'H'):
+        print(ex.resiseH())
+
+    str = filename.split('.')[-1].lower()
+    filename = asksaveasfilename(defaultextension='.' + str)
+    print(ex.saveFile(filename))
+
+
+if __name__ == '__main__':
+    main()
+
