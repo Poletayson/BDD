@@ -45,3 +45,9 @@ New Python  Image converter
     When I have opened image
     And I have resized image by W
     Then The size should be 1280, 1280
+
+    Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/2.JPEG
+    When I have opened image
+    And I have resized image by W
+    Then The size should be 640, 640
