@@ -18,7 +18,11 @@ class Example:
             return '...'
 
     def saveFile(self, filename):
-            return 'jpg'
+        str = filename.split('.')[-1].lower()
+        if (str == 'jpg'):
+            return str
+        else:
+            return 'png'
 
 
 
