@@ -26,9 +26,8 @@ class Example:
             return "..."
 
     def resiseW (self):
-        str = self.filename.split('.')[-1].lower()
-        if (str == 'jpg'):
-            return (1280,1280)
-        else:
-            return (640, 640)
+        W, H = self.img.size
+        self.img = self.img.resize((W, W))
+        return self.img.size
+
 
