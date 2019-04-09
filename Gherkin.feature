@@ -25,5 +25,5 @@ New Python  Image converter
     Scenario:
     Given I have my Image converter C:/Users/Дима/Desktop/test/1.jpg
     When I have opened image
-    And I have saved image
+    And I have saved image C:/Users/Дима/Desktop/test/11.jpg
     Then The result should be jpg
