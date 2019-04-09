@@ -17,4 +17,8 @@ class Example:
         else:
             return '...'
 
+    def saveFile(self, filename):
+            return 'jpg'
+
+
 
