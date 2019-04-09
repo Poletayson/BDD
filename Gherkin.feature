@@ -17,3 +17,7 @@ New Python  Image converter
     When I have opened image
     Then The result should be jpeg
 
+    Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/ЛР №5.doc
+    When I have opened image
+    Then The result should be ...
