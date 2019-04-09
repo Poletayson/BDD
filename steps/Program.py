@@ -5,6 +5,7 @@ from PIL import  Image #Подключим необходимые библиот
 
 class Example:
     filename = ""
+    img = Image.new("RGB", (0, 0))
 
     def __init__(self, f):
         self.filename = f
@@ -26,8 +27,11 @@ class Example:
             return "..."
 
     def resiseW (self):
-        W, H = self.img.size
-        self.img = self.img.resize((W, W))
-        return self.img.size
-
+        str = self.filename.split('.')[-1].lower()
+        if (str == "jpg" or str == "png" or str == "jpeg"):
+            W, H = self.img.size
+            self.img = self.img.resize((W, W))
+            return self.img.size
+        else:
+            return (0,0)
 
