@@ -33,3 +33,13 @@ def step_impl(context, file_type):
     :type context: behave.runner.Context
     """
     assert context.result == file_type
+
+
+@step("I have saved image (?P<file_name>.+)")
+def step_impl(context, file_name):
+    """
+    :type file_name: str
+    :type context: behave.runner.Context
+    """
+    context.result = context.Converter.saveFile(file_name)
+    return context.result
