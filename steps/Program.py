@@ -14,6 +14,7 @@ class Example:
         if (str == "jpg" or str == "png" or str == "jpeg"):
             self.img = Image.open(self.filename)
             return str
-
+        else:
+            return '...'
 
 
