@@ -57,3 +57,9 @@ New Python  Image converter
     When I have opened image
     And I have resized image by W
     Then The size should be 618, 618
+
+    Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/ЛР №5.doc
+    When I have opened image
+    And I have resized image by W
+    Then The size should be 0, 0
