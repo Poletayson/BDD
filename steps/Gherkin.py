@@ -4,6 +4,7 @@ from Program import *
 use_step_matcher("re")
 
 result = ""
+size = (0,0)
 
 @given("I have my Image converter (?P<file_name>.+)")
 def step_impl(context, file_name):
@@ -43,3 +44,12 @@ def step_impl(context, file_name):
     """
     context.result = context.Converter.saveFile(file_name)
     return context.result
+
+
+@step("I have resized image by W")
+def step_impl(context):
+    """
+    :type context: behave.runner.Context
+    """
+    context.size = context.Converter.resiseW ()
+    return context.size
