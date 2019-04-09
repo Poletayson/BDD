@@ -53,3 +53,12 @@ def step_impl(context):
     """
     context.size = context.Converter.resiseW ()
     return context.size
+
+
+@then("The size should be (?P<size>.+)")
+def step_impl(context, size):
+    """
+    :type size: str
+    :type context: behave.runner.Context
+    """
+    assert context.size == size

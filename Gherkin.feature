@@ -44,4 +44,4 @@ New Python  Image converter
     Given I have my Image converter C:/Users/Дима/Desktop/test/1.jpg
     When I have opened image
     And I have resized image by W
-    Then The result should be (1280, 1280)
+    Then The size should be (1280, 1280)
