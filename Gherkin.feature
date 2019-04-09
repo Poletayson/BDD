@@ -27,3 +27,9 @@ New Python  Image converter
     When I have opened image
     And I have saved image C:/Users/Дима/Desktop/test/11.jpg
     Then The result should be jpg
+
+    Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/1.jpg
+    When I have opened image
+    And I have saved image C:/Users/Дима/Desktop/test/11.png
+    Then The result should be png
