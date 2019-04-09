@@ -11,9 +11,9 @@ class Example:
 
     def openFile(self):
         str = self.filename.split ('.')[-1].lower()
-        if (str == 'jpg'):
+        if (str == "jpg" or str == "png" or str == "jpeg"):
+            self.img = Image.open(self.filename)
             return str
-        else:
-            return 'png'
+
 
 
