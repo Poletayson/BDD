@@ -13,7 +13,7 @@ def step_impl(context, file_name):
     """
     context.Converter = Example(file_name)
     pass
-    #raise NotImplementedError(u'STEP: Given I have my Image converter whith file \'1.jpg\'')
+
 
 
 @when("I have opened image")
@@ -32,6 +32,4 @@ def step_impl(context, file_type):
     :type file_type: str
     :type context: behave.runner.Context
     """
-    #result = file_type
     assert context.result == file_type
-    #raise NotImplementedError(u'STEP: Then The result should be jpg')

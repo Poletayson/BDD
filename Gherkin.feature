@@ -3,8 +3,11 @@ Feature: Image converter
 New Python  Image converter
 
   Scenario:
-    Given I have my Image converter "C:/Users/Дима/Desktop/test/1.jpg"
+    Given I have my Image converter C:/Users/Дима/Desktop/test/1.jpg
     When I have opened image
     Then The result should be jpg
 
-    #And I have saved 20 as second operand
+   Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/3.png
+    When I have opened image
+    Then The result should be png
