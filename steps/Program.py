@@ -25,6 +25,6 @@ class Example:
         else:
             return "..."
 
-    # def resiseW (self):
-    #         return (1280,1280)
+    def resiseW (self):
+            return (1280,1280)
 
