@@ -11,3 +11,8 @@ New Python  Image converter
     Given I have my Image converter C:/Users/Дима/Desktop/test/3.png
     When I have opened image
     Then The result should be png
+
+   Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/2.jpeg
+    When I have opened image
+    Then The result should be jpeg
