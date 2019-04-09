@@ -2,9 +2,9 @@
 Feature: Image converter
 New Python  Image converter
 
-  Scenario: # Enter scenario name here
-    Given I have my Image converter
-    When I have opened image "1.jpg"
+  Scenario:
+    Given I have my Image converter "C:/Users/Дима/Desktop/test/1.jpg"
+    When I have opened image
     Then The result should be "jpg"
 
     #And I have saved 20 as second operand
