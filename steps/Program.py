@@ -4,11 +4,16 @@ import random
 from PIL import  Image #Подключим необходимые библиотеки.
 
 class Example:
+    filename = ""
 
     def __init__(self, f):
-        filename = f
+        self.filename = f
 
     def openFile(self):
-        return "jpg"
+        str = self.filename.split ('.')[-1].lower()
+        if (str == 'jpg'):
+            return str
+        else:
+            return 'png'
 
 
