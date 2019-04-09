@@ -33,3 +33,9 @@ New Python  Image converter
     When I have opened image
     And I have saved image C:/Users/Дима/Desktop/test/11.png
     Then The result should be png
+
+    Scenario:
+    Given I have my Image converter C:/Users/Дима/Desktop/test/3.png
+    When I have opened image
+    And I have saved image C:/Users/Дима/Desktop/test/33.jpeg
+    Then The result should be jpeg
