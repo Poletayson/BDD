@@ -26,5 +26,9 @@ class Example:
             return "..."
 
     def resiseW (self):
+        str = self.filename.split('.')[-1].lower()
+        if (str == 'jpg'):
             return (1280,1280)
+        else:
+            return (640, 640)
 
