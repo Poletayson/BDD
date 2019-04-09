@@ -61,4 +61,6 @@ def step_impl(context, size):
     :type size: str
     :type context: behave.runner.Context
     """
-    assert context.size == size
+    str = size.split(', ')
+    sz = (int(str[0]), int(str[1]))
+    assert context.size == sz
